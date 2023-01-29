@@ -10,11 +10,15 @@
 
 import React, {type PropsWithChildren} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
+import {HomeApp} from './src/components/HomeApp';
+import {TabBottom} from './src/navigation/TabBottom';
 
 export const App = () => {
-  <NavigationContainer>
-    
-  </NavigationContainer>
+  return (
+    <NavigationContainer>
+      <HomeApp />
+    </NavigationContainer>
+  );
 };
 
 export default App;
