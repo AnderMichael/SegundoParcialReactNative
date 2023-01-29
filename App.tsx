@@ -9,11 +9,12 @@
  */
 
 import React, {type PropsWithChildren} from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 
-export const App = () =>{
-
-  
-}
-
+export const App = () => {
+  <NavigationContainer>
+    
+  </NavigationContainer>
+};
 
 export default App;
