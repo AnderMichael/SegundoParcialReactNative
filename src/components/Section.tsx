@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
   },
   seeAllText: {
     fontSize: 12,
-    color: 'blue',
+    color: '#0ca2ab',
   },
 });

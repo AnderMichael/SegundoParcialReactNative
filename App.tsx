@@ -10,13 +10,13 @@
 
 import React, {type PropsWithChildren} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {HomeApp} from './src/components/HomeApp';
+import {HomeScreen} from './src/components/HomeScreen';
 import {TabBottom} from './src/navigation/TabBottom';
 
 export const App = () => {
   return (
     <NavigationContainer>
-      <HomeApp />
+      <HomeScreen />
     </NavigationContainer>
   );
 };

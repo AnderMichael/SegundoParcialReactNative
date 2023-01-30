@@ -6,7 +6,10 @@ import {Text} from '@rneui/base';
 export const Categories = () => {
   return (
     <Section titleSection="Categories" flexSection={3}>
-      <ScrollView style={styles.scrollView} horizontal={true}>
+      <ScrollView
+        style={styles.scrollView}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}>
         <View style={{justifyContent: 'space-around'}}>
           <ChipCategoriesContainer>
             <ChipCategories title="Art" emojiName="frame_with_picture" />
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
   scrollView: {
     marginHorizontal: 15,
     flexDirection: 'row',
-    },
+  },
   chipCategories: {
     backgroundColor: 'white',
     height: 35,

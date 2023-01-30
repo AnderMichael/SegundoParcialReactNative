@@ -14,7 +14,7 @@ export const GreetingUser = ({nameUser}: GreetingUserProps) => {
     <View
       style={{
         ...globalStyles.container,
-        backgroundColor: '#05a8b7',
+        backgroundColor: '#0ca2ab',
         borderBottomRightRadius: 25,
         borderBottomLeftRadius: 25,
         paddingTop: 15,
