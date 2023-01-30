@@ -10,7 +10,7 @@ export const Categories = () => {
         style={styles.scrollView}
         horizontal={true}
         showsHorizontalScrollIndicator={false}>
-        <View style={{justifyContent: 'space-around'}}>
+        <View style={{justifyContent: 'space-between'}}>
           <ChipCategoriesContainer>
             <ChipCategories title="Art" emojiName="frame_with_picture" />
             <ChipCategories title="Coding" emojiName="computer" />

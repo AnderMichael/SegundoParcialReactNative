@@ -6,19 +6,21 @@ interface SectionProps {
   titleSection: string;
   flexSection?: number;
   children?: any;
+  jusCon?:any;
 }
 export const Section = ({
   titleSection,
   flexSection = 1,
   children,
+  jusCon,
 }: SectionProps) => {
   return (
     <View
       style={{
         ...globalStyles.container,
-        paddingTop: 10,
         flex: flexSection,
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        justifyContent: jusCon
       }}>
       <View style={globalStyles.subContainer}>
         <View style={styles.titleSet}>

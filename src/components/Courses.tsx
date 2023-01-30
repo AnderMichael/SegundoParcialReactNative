@@ -41,12 +41,12 @@ const CourseCard = (resCourse: course) => {
       <View
         style={{
           marginRight: 22,
-          height: 150,
+          height: 80,
           width: 150,
         }}>
         <Image
           source={{uri: resCourse.url}}
-          style={{height: 100, width: 150, borderRadius: 20}}
+          style={{height: 80, width: 150, borderRadius: 20}}
         />
         <Text style={styles.titleCourse}>{resCourse.name}</Text>
         <Text style={styles.userCourse}>

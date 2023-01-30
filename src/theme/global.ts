@@ -18,5 +18,6 @@ export const globalStyles = StyleSheet.create({
     height: '100%',
     width: '100%',
     backgroundColor: '#f1f1f1',
+    borderRadius: 25,
   },
 });

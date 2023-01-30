@@ -1,18 +1,19 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {ScreenAccount} from '../screens/ScreenAccount';
-import {ScreenExplore} from '../screens/ScreenExplore';
 import {ScreenMyCourse} from '../screens/ScreenMyCourse';
 import {ScreenWishList} from '../screens/ScreenWishlist';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {StackNavigator} from './StackNavigator';
 export const TabBottom = () => {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
       initialRouteName="Explore"
-      screenOptions={{headerShown: false}}>
+      screenOptions={{headerShown: false }}
+      sceneContainerStyle={{margin: 5, borderRadius: 25}}>
       <Tab.Screen
         name="Explore"
-        component={ScreenExplore}
+        component={StackNavigator}
         options={{
           tabBarIcon: ({focused, color, size}) => {
             let iconName: string;

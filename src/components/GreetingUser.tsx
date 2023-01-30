@@ -15,10 +15,10 @@ export const GreetingUser = ({nameUser}: GreetingUserProps) => {
       style={{
         ...globalStyles.container,
         backgroundColor: '#0ca2ab',
-        borderBottomRightRadius: 25,
-        borderBottomLeftRadius: 25,
+        borderRadius:25,
+        marginBottom: 15,
         paddingTop: 15,
-        flex: 4,
+        flex: 3,
       }}>
       <View style={globalStyles.subContainer}>
         <View style={styles.greetingSet}>
