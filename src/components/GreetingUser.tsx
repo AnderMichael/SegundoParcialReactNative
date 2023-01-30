@@ -3,6 +3,8 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {globalStyles} from '../theme/global';
 import {SearchBar} from '@rneui/themed';
 import Icon from 'react-native-vector-icons/Ionicons';
+import SimpleEmoji from 'simple-react-native-emoji';
+
 interface GreetingUserProps {
   nameUser: string;
 }
@@ -20,7 +22,9 @@ export const GreetingUser = ({nameUser}: GreetingUserProps) => {
       }}>
       <View style={globalStyles.subContainer}>
         <View style={styles.greetingSet}>
-          <Text style={styles.greeting}>Hi, {nameUser}</Text>
+          <Text style={styles.greeting}>
+            Hi, {nameUser} {<SimpleEmoji shortName="wave" />}
+          </Text>
           <Text style={styles.subGreeting}>Let's start learning!</Text>
         </View>
         <View style={styles.iconsSet}>
@@ -38,7 +42,7 @@ export const GreetingUser = ({nameUser}: GreetingUserProps) => {
             borderRadius: 15,
             justifyContent: 'center',
             zIndex: 3,
-            paddingHorizontal: 20
+            paddingHorizontal: 20,
           }}
         />
       </View>

@@ -17,6 +17,6 @@ export const globalStyles = StyleSheet.create({
     position: 'absolute',
     height: '100%',
     width: '100%',
-    backgroundColor: '#fafafa',
+    backgroundColor: '#f1f1f1',
   },
 });

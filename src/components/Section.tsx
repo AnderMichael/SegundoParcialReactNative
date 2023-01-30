@@ -5,7 +5,7 @@ import {globalStyles} from '../theme/global';
 interface SectionProps {
   titleSection: string;
   flexSection?: number;
-  children: any;
+  children?: any;
 }
 export const Section = ({
   titleSection,
@@ -16,8 +16,9 @@ export const Section = ({
     <View
       style={{
         ...globalStyles.container,
-        paddingTop: 15,
+        paddingTop: 10,
         flex: flexSection,
+        alignItems: 'flex-start'
       }}>
       <View style={globalStyles.subContainer}>
         <View style={styles.titleSet}>
